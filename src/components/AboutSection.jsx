@@ -1,94 +1,79 @@
-import { Briefcase, Code, User, Download } from "lucide-react";
+import { Briefcase, Code, User, Download, ArrowRight } from "lucide-react";
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="py-24 px-4 relative">
-      <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          About <span className="text-primary"> Me</span>
-        </h2>
+    <section id="about" className="py-32 px-4">
+      <div className="container mx-auto max-w-6xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="space-y-8">
+            <div>
+              <div className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20 mb-6">
+                About Me
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold font-heading tracking-tight mb-6">
+                Crafting Digital <span className="text-primary">Experiences</span>
+              </h2>
+            </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Graphics Designer
-            </h3>
-
-            <p className="text-muted-foreground">
-              With over a year of experience in web development & graphics design, I specialize
-              in creating responsive, accessible, and performant web
-              applications using modern technologies.
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              With over a year of experience in web development and graphics design, I specialize
+              in creating responsive, accessible, and performant web applications using modern technologies.
             </p>
 
-            <p className="text-muted-foreground">
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              I'm passionate about creating elegant solutions to complex problems, and I'm constantly learning new technologies and
+              techniques to stay at the forefront of the ever-evolving web landscape.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="#contact" className="cosmic-button">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <a href="#contact" className="magnetic-btn group">
                 Get In Touch
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
 
               <a
                 href="/Wangie_Mamati_Resume.pdf"
                 download
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 flex items-center gap-2"
+                className="px-6 py-3 rounded-full border border-border bg-card text-foreground hover:border-primary/50 transition-all duration-300 flex items-center justify-center gap-2 font-medium hover:shadow-lg"
               >
-                <Download size={16} />
+                <Download size={18} />
                 Download CV
               </a>
             </div>
           </div>
 
           <div className="grid grid-cols-1 gap-6">
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">Web Development</h4>
-                  <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
-                  <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
-                </div>
-
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Management</h4>
-                  <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies.
-                  </p>
+            {[
+              {
+                icon: Code,
+                title: "Web Development",
+                description: "Creating responsive websites and web applications with modern frameworks."
+              },
+              {
+                icon: User,
+                title: "UI/UX Design",
+                description: "Designing intuitive user interfaces and seamless user experiences."
+              },
+              {
+                icon: Briefcase,
+                title: "Project Management",
+                description: "Leading projects from conception to completion with agile methodologies."
+              }
+            ].map((item, index) => (
+              <div key={index} className="bg-card border border-border/50 rounded-2xl p-6 hover:border-primary/50 transition-all duration-300 hover:shadow-lg group">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <item.icon className="h-6 w-6" />
+                  </div>
+                  <div className="text-left">
+                    <h4 className="font-bold text-lg mb-2 font-heading">{item.title}</h4>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tankers - Your premium destination for fine wines, spirits, craft beers, and liquors. Discover our curated collection of the world's finest beverages.">
+    <meta name="keywords" content="liquor store, wine, spirits, whiskey, vodka, craft beer, premium liquor, Tankers">
+    <title>Tankers - Premium Liquor & Spirits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1 class="logo">TANKERS</h1>
+                <p class="tagline">Premium Spirits</p>
+            </div>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#featured" class="nav-link">Featured</a></li>
+                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-title fade-in">Discover Excellence</h2>
+            <p class="hero-subtitle fade-in-delay">Curated Collection of the World's Finest Spirits</p>
+            <a href="#featured" class="cta-button fade-in-delay-2">Explore Our Selection</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Selection</h2>
+                <p class="section-subtitle">Handpicked premium spirits for the discerning connoisseur</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-category="whiskey">
+                    <div class="product-image whiskey-bg">
+                        <div class="product-badge">Premium</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Single Malt Whiskey</h3>
+                        <p class="product-description">Aged 18 years in oak barrels</p>
+                        <div class="product-footer">
+                            <span class="product-price">$189.99</span>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="wine">
+                    <div class="product-image wine-bg">
+                        <div class="product-badge">Exclusive</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Château Reserve</h3>
+                        <p class="product-description">Bordeaux vintage 2015</p>
+                        <div class="product-footer">
+                            <span class="product-price">$249.99</span>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="spirits">
+                    <div class="product-image spirits-bg">
+                        <div class="product-badge">Craft</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Artisan Gin</h3>
+                        <p class="product-description">Small batch botanical blend</p>
+                        <div class="product-footer">
+                            <span class="product-price">$79.99</span>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="vodka">
+                    <div class="product-image vodka-bg">
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Crystal Vodka</h3>
+                        <p class="product-description">Triple distilled premium</p>
+                        <div class="product-footer">
+                            <span class="product-price">$59.99</span>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-subtitle">Explore our extensive collection</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card whiskey-category">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <h3 class="category-name">Whiskey & Bourbon</h3>
+                        <p class="category-count">120+ Premium Selections</p>
+                        <button class="category-btn">Browse Collection</button>
+                    </div>
+                </div>
+                <div class="category-card wine-category">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <h3 class="category-name">Fine Wines</h3>
+                        <p class="category-count">200+ Vintages</p>
+                        <button class="category-btn">Browse Collection</button>
+                    </div>
+                </div>
+                <div class="category-card spirits-category">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <h3 class="category-name">Craft Spirits</h3>
+                        <p class="category-count">80+ Artisan Bottles</p>
+                        <button class="category-btn">Browse Collection</button>
+                    </div>
+                </div>
+                <div class="category-card beer-category">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <h3 class="category-name">Craft Beer</h3>
+                        <p class="category-count">150+ Local & Import</p>
+                        <button class="category-btn">Browse Collection</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">The Tankers Story</h2>
+                    <p class="about-description">
+                        Since our founding, Tankers has been dedicated to bringing the world's finest spirits to
+                        discerning customers. Our passion for quality and excellence drives us to curate an exceptional
+                        collection that celebrates craftsmanship and tradition.
+                    </p>
+                    <p class="about-description">
+                        From rare single malts to exclusive vintages, every bottle in our collection is carefully
+                        selected by our expert team. We believe that great spirits bring people together and create
+                        unforgettable moments.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🏆</div>
+                            <h4>Premium Selection</h4>
+                            <p>Curated by experts</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🌍</div>
+                            <h4>Global Sourcing</h4>
+                            <p>From around the world</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✨</div>
+                            <h4>Exceptional Service</h4>
+                            <p>Personalized experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Visit Us</h2>
+                <p class="section-subtitle">Experience the Tankers difference in person</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>123 Premium Boulevard<br>Downtown District<br>City, State 12345</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+                        <h3>Hours</h3>
+                        <p>Monday - Thursday: 10am - 9pm<br>Friday - Saturday: 10am - 11pm<br>Sunday: 12pm - 8pm</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3>Contact</h3>
+                        <p>Phone: (555) 123-4567<br>Email: info@tankersliquor.com</p>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Get in Touch</h3>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Phone Number">
+                        <textarea placeholder="Message" rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">TANKERS</h3>
+                    <p class="footer-tagline">Premium Spirits Since Day One</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">FB</a>
+                        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+                        <a href="#" class="social-link" aria-label="Twitter">TW</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#featured">Featured Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#categories">Whiskey & Bourbon</a></li>
+                        <li><a href="#categories">Fine Wines</a></li>
+                        <li><a href="#categories">Craft Spirits</a></li>
+                        <li><a href="#categories">Craft Beer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tankers Premium Liquor. All rights reserved. | Please drink responsibly.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
